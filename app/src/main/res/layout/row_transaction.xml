@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/tv_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Id :"
+            android:textColor="@color/black"></TextView>
+
+        <TextView
+            android:id="@+id/txt_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_order"
+            android:layout_marginTop="5dp"
+            android:text="123456789"></TextView>
+
+        <TextView
+            android:id="@+id/tv_card_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_order"
+            android:layout_marginTop="5dp"
+            android:text="Card Name :"
+            android:textColor="@color/black"></TextView>
+
+        <TextView
+            android:id="@+id/txt_card_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_card_name"
+            android:layout_marginTop="5dp"
+            android:text="Master Card"></TextView>
+
+        <TextView
+            android:id="@+id/tv_card_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_card_name"
+            android:layout_marginTop="5dp"
+            android:text="Card Number :"
+            android:textColor="@color/black"></TextView>
+
+        <TextView
+            android:id="@+id/txt_card_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_card_no"
+            android:layout_marginTop="5dp"
+            android:text="68755898765981265"></TextView>
+
+        <TextView
+            android:id="@+id/tv_card_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_card_no"
+            android:layout_marginTop="5dp"
+            android:text="Card Expiry Date :"
+            android:textColor="@color/black"></TextView>
+
+        <TextView
+            android:id="@+id/txt_card_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_card_date"
+            android:layout_marginTop="5dp"
+            android:text="10/23"></TextView>
+
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.2dp"
+            android:layout_below="@id/txt_card_date"
+            android:layout_marginStart="10dp"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#c2c2c2"></View>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

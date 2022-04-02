@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/app"
+        android:background="#F4112C"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Item Details"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+        >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="450dp"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="450dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            tools:listitem="@layout/row_item">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </ScrollView>
+
+</RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_all_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/rl_btm"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="20dp"
+            android:text="Total Price : 785.00"
+            android:textColor="#F4112C"
+            android:textSize="18sp"
+
+            android:textStyle="bold|italic"></TextView>
+
+        <TextView
+            android:id="@+id/tv_tanleno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_all_cost"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:text="Table No : A005"
+            android:textColor="#CD2EE8"
+            android:textSize="18sp"
+
+            android:textStyle="bold|italic"></TextView>
+        <RelativeLayout
+            android:id="@+id/rl_btm"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:visibility="invisible"
+            android:layout_height="50dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="2"
+                >
+                <TextView
+                    android:id="@+id/txt_bill"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Generate Bill"
+                    android:padding="15dp"
+                    android:background="#F4112C"
+                    android:gravity="center"
+                    android:textColor="@color/white"></TextView>
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"></LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_payment"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:background="#F4112C"
+                    android:text="Payment"
+                    android:textColor="@color/white"></TextView>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

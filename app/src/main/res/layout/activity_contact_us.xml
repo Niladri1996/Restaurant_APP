@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".ContactUs">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Mother's Hut Restaurant"
+            android:textColor="#F4112C"
+            android:textSize="20sp"
+
+            android:textStyle="italic|bold"></TextView>
+
+        <TextView
+            android:id="@+id/tv_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:layout_marginTop="18dp"
+            android:text="CONTACT US :"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/tv_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_contact"
+            android:layout_marginTop="8dp"
+            android:text="Ae you a food lover? If your answer is YES,then in restaurant for you. We serve food reasonable price. It's awesome, we know"
+            android:textColor="@color/black"></TextView>
+
+        <EditText
+            android:id="@+id/ed_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_des"
+            android:layout_marginTop="16dp"
+            android:hint="Your full name ">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/ed_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ed_name"
+            android:layout_marginTop="5dp"
+            android:hint="Your full email address ">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/ed_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ed_email"
+            android:layout_marginTop="5dp"
+            android:hint="Your phone number "></EditText>
+
+
+        <EditText
+            android:id="@+id/ed_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ed_phone"
+            android:layout_marginTop="5dp"
+            android:hint="Message here">
+
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/tv_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ed_msg"
+            android:layout_marginTop="16dp"
+            android:text="Send Now --->"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"></TextView>
+
+
+    <LinearLayout
+        android:id="@+id/ll_1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="3"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/tv_send">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1.2dp"
+            android:background="#474747"
+            android:layout_gravity="center"
+
+            android:layout_weight="1"></View>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Follow us"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="19sp"
+            android:layout_gravity="center"
+            android:layout_weight="1"></TextView>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1.2dp"
+            android:background="#474747"
+            android:layout_gravity="center"
+            android:layout_weight="1"></View>
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:weightSum="4"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/ll_1"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:src="@drawable/facebook"
+                android:padding="5dp"
+                android:layout_gravity="center"></ImageView>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/youtube"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"></ImageView>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:src="@drawable/instagram"
+                android:padding="5dp"
+                android:layout_gravity="center"></ImageView>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/twitter"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"></ImageView>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

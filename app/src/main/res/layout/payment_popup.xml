@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment Successfully"
+            android:textSize="19sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold|italic"
+            android:layout_centerHorizontal="true"></TextView>
+
+
+        <ImageView
+            android:id="@+id/img_success"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/tv_payment"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/success"></ImageView>
+
+        <RelativeLayout
+            android:layout_below="@id/img_success"
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:background="#E2559A05"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/btn_review"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Write Review"
+                android:layout_centerInParent="true"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                ></TextView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

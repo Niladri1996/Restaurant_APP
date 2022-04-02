@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/app"
+        android:background="#F4112C"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_margin="15dp"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+        >
+
+        <TextView
+            android:id="@+id/txt_orderid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Order Id "
+            android:textColor="#000"></TextView>
+
+
+        <TextView
+            android:id="@+id/tv_orderid"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/txt_orderid"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/layout4"
+            android:padding="10dp"></TextView>
+        <TextView
+            android:id="@+id/txt_tableno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/tv_orderid"
+            android:text="Table No "
+            android:textColor="#000"></TextView>
+
+
+        <TextView
+            android:id="@+id/tv_tableno"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/txt_tableno"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/layout4"
+            android:padding="10dp"></TextView>
+
+        <TextView
+            android:id="@+id/txt_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/tv_tableno"
+            android:text="Order Status "
+            android:textColor="#000"></TextView>
+
+
+        <EditText
+            android:id="@+id/ed_status"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/txt_status"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/layout4"
+            android:padding="5dp"></EditText>
+
+        <TextView
+            android:id="@+id/txt_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/ed_status"
+            android:text="Total Price "
+            android:textColor="#000"></TextView>
+
+
+        <TextView
+            android:id="@+id/tv_cost"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/txt_cost"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/layout4"
+            android:padding="10dp"></TextView>
+
+        <RelativeLayout
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/tv_cost"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/layout2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Update"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"></TextView>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
